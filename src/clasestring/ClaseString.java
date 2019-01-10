@@ -53,11 +53,41 @@ public class ClaseString {
                 //metodos equals y equalsIgnoreCase: mayuscula de j
                 System.out.println("Igualdad Java y java:" + "Java".equals("java"));
                 System.out.println("Igualdad Java y java:" + "Java".equalsIgnoreCase("java"));
-            //quitar espacios delannte y detras
+           
+                //quitar espacios delannte y detras
                 String espacios = " palabra palabra ";
                 System.out.println("tamaño de espacios: "+ espacios.length());
                 String sinEspaciosn = espacios.trim();
                 System.out.println("tamañoe de sinEspacios: "+ sinEspaciosn.length());
-    }
+                
+                //reemplazo de caracteres
+                System.out.println("String original: " + s2);
+                
+                String str2 = s2.replace('a', 'x');
+                System.out.println("string reemplzo: " +  str2);
+                
+                //Contenido
+                String aBuscar = "dealbox";
+                System.out.println("¿Contiene: " + s2 + "la subcadena " + aBuscar + "? " + 
+                        s2.contains(aBuscar));
+                
+                //probar metodos endWith, starsWith , isEmpty
+                
+                //obtener un array de char de la cadena
+                //declaracin de una variablde array de tipo char
+                char[] arrayChar;
+                arrayChar = s2.toCharArray();
+                
+                //atributo length existe en todos los arrays y me indica su tamaño
+                //equivalente al metodo length() de los String
+              
+                for(int i = 0; i < arrayChar.length; i++){
+                    //para acceder a cada posicion del array uso los corchetes
+                    System.out.println("posicion i = " + i + " contenido = " + arrayChar[i]);
+                    
+                   
+                }
+                
+        }
     
 }
