@@ -53,7 +53,11 @@ public class ClaseString {
                 //metodos equals y equalsIgnoreCase: mayuscula de j
                 System.out.println("Igualdad Java y java:" + "Java".equals("java"));
                 System.out.println("Igualdad Java y java:" + "Java".equalsIgnoreCase("java"));
-
+            //quitar espacios delannte y detras
+                String espacios = " palabra palabra ";
+                System.out.println("tamaño de espacios: "+ espacios.length());
+                String sinEspaciosn = espacios.trim();
+                System.out.println("tamañoe de sinEspacios: "+ sinEspaciosn.length());
     }
     
 }
