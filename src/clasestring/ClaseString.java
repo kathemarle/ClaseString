@@ -22,8 +22,25 @@ public class ClaseString {
         //obtener el char de una posicion concreta
         
         System.out.println("Chart asociado a la posicion 5: " + s.charAt(5));
-              
-      
+        
+        
+        //obtener subcadena desde el ccaracter i-ésimo hasta el final
+        //de la cadena
+        String subcadena = s.substring(3);
+        System.out.println("subcadena = "+ subcadena);
+        
+      //obtener subcadena desde el ccaracter i-ésimo hasta el caracter j-ésimo
+        //de la cadena
+        subcadena = s.substring(6,13);
+        System.out.println("subcadena = "+ subcadena);
+        
+        //concatenar cadenas. equivale al operador + /concat
+        String s1 = "ies";
+        String s2 = "mardealboran.com";
+        String nuevo = s1+s2;
+        String nuevo2 = s1.concat(s2);
+        System.out.println("nuevo"+ nuevo);
+        System.out.println("nuevo2" + nuevo2);
     }
     
 }
